@@ -1,0 +1,26 @@
+# Cletos
+
+> Cletos is de eenmanszaak van Bas Streefkerk, AI Automation Consultant in Apeldoorn (KvK 84578165). Cletos helpt zzp'ers, bedrijven en organisaties bepalen waar AI in hun werk iets oplevert, en voert het uit: AI-automatisering van terugkerend werk, een AI-assistent op eigen bedrijfsdocumenten, en een AI-zichtbaarheidsscan die meet wat ChatGPT, Claude, Gemini en Perplexity over een organisatie zeggen. Werkgebied: Nederland.
+
+Werkwijze: een gratis kennismaking van een half uur, daarna één A4 met wat er gebeurt, wat niet en wat het kost. Pas na akkoord begint het werk. Alle bedragen zijn richtprijzen voor een kleine opdracht, exclusief btw; de definitieve prijs staat in het voorstel na de kennismaking.
+
+Tarieven: € 85 per uur, € 600 per projectdag.
+
+Contact: telefoon 06 18 65 48 54 (+31 6 18 65 48 54), e-mail cletos.it@gmail.com. Reactie binnen twee werkdagen.
+
+## Diensten
+
+- [Diensten en prijzen](https://cletos.nl/diensten/): overzicht van alle diensten, richtprijzen en de werkwijze.
+- [AI-zichtbaarheidsscan](https://cletos.nl/ai-zichtbaarheidsscan/): meet wat ChatGPT, Claude, Gemini en Perplexity antwoorden als een potentiële klant naar een organisatie vraagt. Vier lagen (technische leesbaarheid, opgehaalde bronnen, wat het model ervan maakt, stabiliteit), elke vraag meerdere keren uitgelogd gesteld. Rapport van ongeveer tien pagina's met schermafbeeldingen en een reparatielijst, plus een toelichtingsgesprek van een uur. Vanaf € 750; introductietarief € 500 voor de eerste drie opdrachten.
+- [AI-automatisering van één werkstroom](https://cletos.nl/ai-automatisering/): terugkerend handwerk tussen mail, documenten en berichten wordt een werkstroom die zichzelf uitvoert. Eén werkstroom, één doel, getest opgeleverd en overgedragen. Vanaf € 750.
+- [AI-assistent op eigen documenten](https://cletos.nl/ai-assistent/): een interne assistent die vragen van een team beantwoordt uit alleen de eigen, goedgekeurde bedrijfsdocumenten, met bronvermelding. Vanaf € 950 plus € 100 per maand.
+
+## Over Cletos
+
+- [Over Bas](https://cletos.nl/over-bas/): wie er achter Cletos zit en hoe hij werkt.
+- [Contact](https://cletos.nl/contact/): bellen of mailen; het eerste gesprek van een half uur is gratis.
+
+## Optional
+
+- [Nieuws voor ondernemers](https://cletos.nl/nieuws/): elke maand drie AI-ontwikkelingen die ondernemers raken, met bronnen.
+- [GitHub](https://github.com/streefkerkshipping): openbaar werk van Bas Streefkerk.
