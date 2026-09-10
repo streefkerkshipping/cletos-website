@@ -1,13 +1,16 @@
-/* Cletos — één pagina, één lettertype, één accentkleur. */
+/* Cletos — één pagina. Kleuren en letters volgen het logo: inkt, goud, papier. */
 
 :root {
-  --paper: #FAFAF7;
-  --ink: #17211D;
-  --pine: #1E5A43;
-  --pine-deep: #16442F;
-  --moss: #EEF2EC;
-  --stone: #5F6A64;
-  --line: #D8DED7;
+  --paper: #F5F5F2;
+  --ink: #15171C;
+  --pine: #15171C;        /* knoppen en accenten: inkt */
+  --pine-deep: #2A2E38;   /* hover */
+  --gold: #E3A23B;        /* alleen de punt en kleine markeringen */
+  --gold-text: #9A6212;   /* goud dat leesbaar is als tekst */
+  --moss: #EAEBE7;
+  --stone: #5B6472;
+  --line: #DADCD8;
+  --display: "Figtree", "Segoe UI", system-ui, sans-serif;
 
   --measure: 62ch;
   --page: 1040px;
@@ -22,16 +25,15 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
-  font-optical-sizing: auto;
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--pine); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
-a:hover { color: var(--pine-deep); }
-:focus-visible { outline: 2px solid var(--pine); outline-offset: 3px; border-radius: 2px; }
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { color: var(--gold-text); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
 
 /* Kop van de pagina */
 .top {
@@ -44,12 +46,16 @@ a:hover { color: var(--pine-deep); }
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+.lockup { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--ink); text-decoration: none; }
+.mark { width: 2.4rem; height: 2.4rem; flex-shrink: 0; }
+.stack { display: flex; flex-direction: column; gap: 0.15rem; }
 .wordmark {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--pine);
-  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--ink);
 }
 .top nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 .top nav a { color: var(--stone); text-decoration: none; font-size: 1rem; }
@@ -60,25 +66,27 @@ main { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter) 4rem; }
 
 .hero { padding: clamp(3rem, 10vh, 7rem) 0 clamp(2.5rem, 6vh, 4rem); }
 h1 {
-  font-size: clamp(2.25rem, 5.6vw, 4.25rem);
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -0.015em;
+  font-family: var(--display);
+  font-size: clamp(2.1rem, 5.2vw, 3.9rem);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
   margin: 0 0 1.5rem;
   max-width: 18ch;
   text-wrap: balance;
 }
-.lead { font-size: clamp(1.2rem, 1.9vw, 1.45rem); line-height: 1.5; max-width: 52ch; margin: 0 0 2rem; }
+.lead { font-size: clamp(1.2rem, 1.9vw, 1.4rem); line-height: 1.45; max-width: 52ch; margin: 0 0 2rem; }
 
 .section { padding: clamp(2.5rem, 6vh, 4rem) 0 0; max-width: var(--measure); }
 h2 {
-  font-size: clamp(1.7rem, 3vw, 2.25rem);
-  font-weight: 500;
+  font-family: var(--display);
+  font-size: clamp(1.55rem, 2.8vw, 2.1rem);
+  font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.025em;
   margin: 0 0 1rem;
 }
-h3 { font-size: 1.25rem; font-weight: 500; margin: 1.75rem 0 0.35rem; }
+h3 { font-family: var(--display); font-size: 1.2rem; font-weight: 600; margin: 1.75rem 0 0.35rem; }
 p { margin: 0 0 1rem; }
 .intro { color: var(--stone); }
 .small { font-size: 1rem; color: var(--stone); margin: 0; }
@@ -98,8 +106,8 @@ em { font-style: italic; }
   border: 1px solid var(--pine);
 }
 .button:hover { background: var(--pine-deep); border-color: var(--pine-deep); color: var(--paper); }
-.button.secondary { background: transparent; color: var(--pine); border-color: var(--line); }
-.button.secondary:hover { border-color: var(--pine); background: var(--moss); color: var(--pine-deep); }
+.button.secondary { background: transparent; color: var(--ink); border-color: #C5C8C3; }
+.button.secondary:hover { border-color: var(--ink); background: var(--moss); color: var(--ink); }
 
 /* Diensten: één rij per dienst, prijs rechts, geen kaartjes */
 .services { margin: 1.5rem 0 0; padding: 0; }
@@ -111,11 +119,12 @@ em { font-style: italic; }
   align-items: baseline;
   gap: 1rem 2rem;
   flex-wrap: wrap;
-  font-size: 1.35rem;
-  font-weight: 500;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.25;
 }
-.price { color: var(--pine); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.price { color: var(--gold-text); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
 .service dd { margin: 0.6rem 0 0; }
 .service dd p:last-child { margin-bottom: 0; }
 .aside { color: var(--stone); font-style: italic; }
@@ -124,16 +133,15 @@ em { font-style: italic; }
 /* Werkwijze: echte volgorde, dus genummerd */
 .steps { margin: 0.5rem 0 0; padding-left: 1.6rem; }
 .steps li { margin: 0 0 0.9rem; padding-left: 0.3rem; }
-.steps li::marker { color: var(--pine); font-weight: 500; }
+.steps li::marker { color: var(--gold-text); font-weight: 600; font-family: var(--display); }
 
 /* Over Bas */
-.about { display: grid; grid-template-columns: 9rem 1fr; gap: 2rem; max-width: calc(var(--measure) + 11rem); align-items: start; }
+.about { display: grid; grid-template-columns: 12rem 1fr; gap: 2.25rem; max-width: calc(var(--measure) + 14.25rem); align-items: start; }
 .portrait {
-  width: 9rem; aspect-ratio: 4 / 5;
-  background: var(--moss);
+  width: 12rem; height: auto; aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: 4px;
-  display: grid; place-items: center;
-  color: var(--pine); font-size: 2rem; font-weight: 500;
+  display: block;
 }
 
 .contact { padding-bottom: 1rem; }
@@ -148,10 +156,15 @@ footer {
   font-size: 0.95rem;
 }
 footer p { margin: 0 0 0.35rem; }
+.footer-lockup { margin-bottom: 1rem; flex-wrap: wrap; row-gap: 0.25rem; }
+.footer-lockup .wordmark { font-size: 1.35rem; }
+.footer-lockup .mark { width: 1.9rem; height: 1.9rem; }
+.tagline { color: var(--stone); font-size: 0.85rem; line-height: 1.1; letter-spacing: 0.01em; }
+.footer-lockup .tagline { font-size: 0.8rem; }
 
 @media (max-width: 600px) {
   .about { grid-template-columns: 1fr; }
-  .portrait { width: 7rem; }
+  .portrait { width: 9rem; }
   .actions .button { width: 100%; text-align: center; }
   .hero { padding-top: 2.5rem; }
 }
@@ -159,3 +172,37 @@ footer p { margin: 0 0 0.35rem; }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
+/* Dienstpagina's */
+.subpage h1 { max-width: 22ch; margin-top: clamp(1.5rem, 5vh, 3rem); font-size: clamp(1.9rem, 4.2vw, 3rem); }
+.crumb { margin: clamp(2rem, 6vh, 3.5rem) 0 0; font-size: 1rem; color: var(--stone); }
+.crumb a { color: var(--stone); text-decoration: none; }
+.crumb a:hover { color: var(--ink); }
+.subpage .lead { margin-top: 1.25rem; }
+.checks { margin: 0.5rem 0 0; padding-left: 1.4rem; }
+.checks li { margin: 0 0 0.75rem; padding-left: 0.3rem; }
+.checks li::marker { color: var(--gold); content: "● "; font-size: 0.7em; }
+.faq-item h3 { margin: 1.5rem 0 0.3rem; }
+.faq-item p { margin: 0; }
+.service dt a { color: var(--ink); text-decoration: none; }
+.service dt a:hover { color: var(--gold-text); text-decoration: underline; text-underline-offset: 0.15em; }
+.more { display: inline-block; margin-top: 0.5rem; font-weight: 600; }
+
+.rates { font-family: var(--display); font-size: 1.15rem; margin: 0 0 0.75rem; }
+
+/* Voorpagina */
+.home-hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+.hero-image { width: 100%; height: auto; max-width: 520px; justify-self: end; border-radius: 8px; }
+.news { max-width: var(--measure); }
+.news-item { padding: 1.4rem 0; border-top: 1px solid var(--line); }
+.news-item:last-of-type { border-bottom: 1px solid var(--line); }
+.news-item h3 { margin: 0 0 0.4rem; font-family: var(--display); font-size: 1.2rem; font-weight: 600; }
+.news-item .date { color: var(--stone); font-size: 0.9rem; margin: 0 0 0.5rem; }
+.news-item .betekent { margin: 0.5rem 0 0; padding-left: 0.9rem; border-left: 3px solid var(--gold); }
+.news-item .bron { font-size: 0.9rem; color: var(--stone); margin: 0.5rem 0 0; }
+@media (max-width: 760px) { .home-hero { grid-template-columns: 1fr; } .hero-image { max-width: 320px; justify-self: start; } }
+
+.subpage > h1:first-child { margin-top: clamp(2rem, 6vh, 3.5rem); }
+
+#aanbod { max-width: var(--measure); }
+#aanbod .service dd p { margin: 0; }

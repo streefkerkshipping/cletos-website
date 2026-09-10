@@ -3,113 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cletos — AI-automatisering voor kleine bedrijven, eerlijk gebouwd</title>
-  <meta name="description" content="Cletos automatiseert terugkerend handwerk, zet een AI-assistent op je eigen documenten en meet wat AI over jouw bedrijf vertelt. Vaste prijzen, geschreven scope vooraf. Bas Streefkerk, Apeldoorn.">
+  <title>Cletos — AI-consultancy en automatisering, eerlijk gebouwd</title>
+  <meta name="description" content="AI-advies, automatisering en AI-assistenten voor zzp'ers en bedrijven, plus elke maand het AI-nieuws dat ondernemers moeten weten. Bas Streefkerk, Apeldoorn.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://cletos.nl/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cletos — AI-consultancy en automatisering, eerlijk gebouwd">
+  <meta property="og:description" content="AI-advies, automatisering en AI-assistenten voor zzp'ers en bedrijven, plus elke maand het AI-nieuws dat ondernemers moeten weten. Bas Streefkerk, Apeldoorn.">
+  <meta property="og:url" content="https://cletos.nl/">
+  <meta property="og:image" content="https://cletos.nl/assets/bas.jpg">
+  <meta property="og:locale" content="nl_NL">
+  <link rel="stylesheet" href="styles.css?v=9">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://cletos.nl/#cletos",
+        "name": "Cletos",
+        "alternateName": "Cletos AI-automatisering",
+        "url": "https://cletos.nl/",
+        "logo": "https://cletos.nl/assets/mark.svg",
+        "image": "https://cletos.nl/assets/bas.jpg",
+        "description": "AI-automatisering, AI-assistenten op eigen bedrijfsdocumenten en AI-zichtbaarheidsscans voor zzp'ers, bedrijven en organisaties. Uurtarief en vaste instapprijzen, geschreven scope vooraf.",
+        "telephone": "+31618654854",
+        "email": "cletos.it@gmail.com",
+        "founder": { "@id": "https://cletos.nl/#bas" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Apeldoorn", "addressCountry": "NL" },
+        "areaServed": "NL",
+        "priceRange": "vanaf €750 per opdracht; €85 per uur, €600 per dag",
+        "knowsAbout": ["AI-automatisering", "Anthropic", "Codex", "AI-assistent op bedrijfsdocumenten", "AI-zichtbaarheid", "Generative Engine Optimization"],
+        "identifier": { "@type": "PropertyValue", "propertyID": "KvK", "value": "84578165" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Diensten",
+          "itemListElement": [
+            { "@type": "Offer", "url": "https://cletos.nl/ai-zichtbaarheidsscan/", "name": "AI-zichtbaarheidsscan", "description": "Meting van wat ChatGPT, Claude, Gemini en Perplexity over een organisatie zeggen, met schermafbeeldingen en reparatielijst. Richtprijs vanaf € 750; maatwerk per opdracht.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "750", "priceCurrency": "EUR" } },
+            { "@type": "Offer", "url": "https://cletos.nl/ai-automatisering/", "name": "AI-automatisering van één werkstroom", "description": "Eén werkstroom met één doel, gebouwd en getest. Richtprijs vanaf € 750; maatwerk per opdracht.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "750", "priceCurrency": "EUR" } },
+            { "@type": "Offer", "url": "https://cletos.nl/ai-assistent/", "name": "AI-assistent op eigen documenten", "description": "Assistent op eigen goedgekeurde documenten met bronvermelding. Richtprijs vanaf € 950 plus € 100 per maand; maatwerk per opdracht.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "950", "priceCurrency": "EUR" } }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cletos.nl/#bas",
+        "url": "https://cletos.nl/over-bas/",
+        "name": "Bas Streefkerk",
+        "jobTitle": "AI Automation Consultant",
+        "worksFor": { "@id": "https://cletos.nl/#cletos" },
+        "image": "https://cletos.nl/assets/bas.jpg",
+        "telephone": "+31618654854",
+        "email": "cletos.it@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Apeldoorn", "addressCountry": "NL" },
+        "sameAs": ["https://github.com/streefkerkshipping"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <header class="top">
-  <a class="wordmark" href="#top" aria-label="Cletos, naar boven">Cletos</a>
-  <nav aria-label="Secties">
-    <a href="#diensten">Diensten</a>
-    <a href="#werkwijze">Werkwijze</a>
-    <a href="#over">Over Bas</a>
-    <a href="#contact">Contact</a>
+  <a class="lockup" href="#top" aria-label="Cletos, naar boven">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M79.3 20.7 A41.4 41.4 0 1 0 79.3 79.3" fill="none" stroke="currentColor" stroke-width="17.2" stroke-linecap="round"/><circle cx="70" cy="50" r="14" fill="#E3A23B"/></svg>
+    <span class="stack"><span class="wordmark">cletos</span><span class="tagline">AI consultancy &amp; automations</span></span>
+  </a>
+    <nav aria-label="Pagina's">
+    <a href="diensten/">Diensten</a>
+    <a href="nieuws/">Nieuws</a>
+    <a href="over-bas/">Over Bas</a>
+    <a href="contact/">Contact</a>
   </nav>
 </header>
 
 <main id="top">
-
   <section class="hero">
-    <h1>AI die betrouwbaar werkt, voor bedrijven die er zelf geen tijd voor hebben.</h1>
-    <p class="lead">Ik automatiseer terugkerend handwerk, zet een assistent op je eigen documenten en meet wat AI over jouw bedrijf vertelt. Vaste prijzen, geschreven scope vooraf, en ik blijf verantwoordelijk dat het blijft draaien.</p>
+    <h1>Minder tijd kwijt aan terugkerend werk.</h1>
+    <p class="lead">Ik ben Bas. Ik help je bepalen waar AI jouw bedrijf kan helpen, richt passende oplossingen in en leer je team ermee werken. Van advies tot automatisering en assistenten op je eigen documenten.</p>
+    <p class="lead">We beginnen met één concrete vraag. Vooraf spreken we af wat je krijgt, wat het kost en hoe we controleren of het werkt.</p>
     <div class="actions">
       <a class="button" href="tel:+31618654854">Bel 06 18 65 48 54</a>
-      <a class="button secondary" href="mailto:bas@cletos.nl">Mail bas@cletos.nl</a>
+      <a class="button secondary" href="mailto:cletos.it@gmail.com">Mail cletos.it@gmail.com</a>
     </div>
-    <p class="small">Reactie binnen één werkdag. Een eerste gesprek van een half uur is gratis.</p>
   </section>
 
-  <section class="section" id="voor-wie">
-    <h2>Voor wie</h2>
-    <p>Bedrijven van vijf tot vijfentwintig mensen waar alle vragen bij één persoon landen. Ondernemers die afspraken, bonnetjes en berichten kwijtraken tussen mail, WhatsApp en mappen. Organisaties die willen weten wat ChatGPT over hen zegt tegen iemand die klant wil worden.</p>
-    <h3>En voor wie niet</h3>
-    <p>Heb je genoeg aan een bestaand programma van twintig euro per maand, dan zeg ik dat. Dat gesprek kost je één uur, geen bouwtraject.</p>
-  </section>
-
-  <section class="section" id="diensten">
-    <h2>Diensten en prijzen</h2>
-    <p class="intro">Elke dienst heeft één vast bedrag. Vooraf staat op één A4 wat wél, wat niet en wat het kost. Alle bedragen zijn exclusief btw.</p>
-
+  <section class="section" id="aanbod">
+    <h2>Wat ik doe</h2>
     <dl class="services">
       <div class="service">
-        <dt><span>AI-zichtbaarheidsscan</span><span class="price">€ 750</span></dt>
-        <dd>
-          <p>Wat vertellen ChatGPT, Gemini en Perplexity over jouw organisatie aan iemand die klant wil worden? Ik meet het, met schermafbeeldingen als bewijs, en lever een rapport met een concrete reparatielijst.</p>
-          <p class="aside">Bij een van de twee organisaties die me voorgingen noemde AI elf concurrenten mét prijs, en hen niet.</p>
-        </dd>
+        <dt><span><a href="contact/">Ik wil eerst weten wat AI voor mijn bedrijf kan betekenen</a></span><span class="price">€ 85 per uur</span></dt>
+        <dd><p>Een adviesgesprek over waar AI in jouw werk zinvol is en waar niet. Een eerste kennismaking van een half uur is gratis.</p></dd>
       </div>
       <div class="service">
-        <dt><span>AI-automatisering, per werkstroom</span><span class="price">€ 750</span></dt>
-        <dd>
-          <p>Terugkerend handwerk tussen mail, documenten en berichten wordt een werkstroom die zichzelf uitvoert. Afgebakend op één A4, gebouwd en getest, daarna overgedragen.</p>
-        </dd>
+        <dt><span><a href="ai-zichtbaarheidsscan/">AI-zichtbaarheidsscan</a></span><span class="price">vanaf € 750</span></dt>
+        <dd><p>Welk beeld potentiële klanten via ChatGPT, Claude, Gemini en Perplexity van je bedrijf krijgen, en waar informatie ontbreekt of niet klopt. Met schermafbeeldingen en een reparatielijst.</p></dd>
       </div>
       <div class="service">
-        <dt><span>AI-assistent op je eigen documenten</span><span class="price">€ 950 opzet + € 100 per maand</span></dt>
-        <dd>
-          <p>Een interne assistent die vragen van je team beantwoordt uit alleen jullie eigen, goedgekeurde documenten, met bronvermelding. Zodat jij niet meer de enige bent die alle antwoorden weet.</p>
-        </dd>
+        <dt><span><a href="ai-automatisering/">AI-automatisering van één werkstroom</a></span><span class="price">vanaf € 750</span></dt>
+        <dd><p>Terugkerend handwerk tussen mail, documenten en berichten wordt een werkstroom die zichzelf uitvoert.</p></dd>
+      </div>
+      <div class="service">
+        <dt><span><a href="ai-assistent/">AI-assistent op je eigen documenten</a></span><span class="price">vanaf € 950, plus € 100 per maand</span></dt>
+        <dd><p>Een assistent die vragen van je team beantwoordt uit jullie goedgekeurde documenten en de gebruikte bronnen toont.</p></dd>
       </div>
     </dl>
-
-    <p class="also">Ook: administratie-automatisering voor zzp'ers (instap € 150) en een persoonlijk AI-kennissysteem, ingericht zoals mijn eigen systeem dat dagelijks draait (€ 750). Losse uren € 85, een projectdag € 600.</p>
+    <p class="also">Richtprijzen voor een kleine opdracht, exclusief btw. Na de kennismaking ontvang je een voorstel met de werkzaamheden, de prijs en de opleverdatum. <a href="diensten/">Alle diensten en de werkwijze.</a></p>
   </section>
 
-  <section class="section" id="werkwijze">
-    <h2>Hoe ik werk</h2>
-    <ol class="steps">
-      <li><strong>Kennismaking.</strong> Een half uur, gratis. Jouw situatie, en of ik iets voor je kan betekenen. Zo niet, dan zeg ik dat.</li>
-      <li><strong>Scope op één A4.</strong> Wat wél, wat niet, wat het kost. Pas als jij akkoord bent, begint het werk.</li>
-      <li><strong>Bouwen en testen.</strong> Ik laat zien dat het werkt, met bewijs in plaats van beloftes.</li>
-      <li><strong>Werkend houden.</strong> Ik blijf aanspreekpunt. Je belt gewoon mij.</li>
-    </ol>
-  </section>
-
-  <section class="section" id="bewijs">
-    <h2>Wat er al ligt</h2>
-    <p>Twee AI-zichtbaarheidsscans uitgevoerd, voor een landelijke goede-doelenorganisatie en een advocatenkantoor. Een intake-agent gebouwd, getest en openbaar gezet op GitHub. Mijn eigen administratie en kennissysteem draaien elke dag op wat ik verkoop.</p>
-    <p>Bij elke dienst zeg ik erbij wat bij klanten bewezen is, wat alleen bij mezelf, en wat nieuw is. Dat hoor je vóór je ja zegt, niet erna.</p>
-  </section>
-
-  <section class="section about" id="over">
-    <div class="portrait" role="img" aria-label="Foto van Bas Streefkerk volgt">
-      <span>BS</span>
+  <section class="section news" id="nieuws">
+    <h2>Nieuws</h2>
+    <div class="news-item">
+      <h3><a href="nieuws/#dsa">De EU noemt ChatGPT nu officieel een zoekmachine</a></h3>
+      <p>Sinds 31 augustus valt ChatGPT onder de regels voor zeer grote zoekmachines. Reden om te controleren welk beeld het van jouw bedrijf geeft.</p>
     </div>
-    <div>
-      <h2>Over Bas</h2>
-      <p>Ik ben Bas Streefkerk, uit Apeldoorn. Ik bouw met de gereedschappen van dit moment, zoals Claude en n8n, maar ik verkoop geen gereedschap. Ik verkoop dat het werkt, en dat je daar iemand voor kunt bellen.</p>
-      <p>Cletos komt van het Griekse woord voor <em>geroepen</em> (Romeinen 1). Ik geloof dat dit werk mijn roeping is: mensen en bedrijven helpen met AI die écht werkt. De AI is mijn gereedschap, de verantwoordelijkheid is van mij. Je spreekt het uit als <em>klee-tos</em>.</p>
+    <div class="news-item">
+      <h3><a href="nieuws/#advertenties">Advertenties in de gratis versie van ChatGPT</a></h3>
+      <p>Sinds 24 augustus staan er advertenties bij de gratis versie en het instapabonnement Go, apart van het antwoord.</p>
     </div>
-  </section>
-
-  <section class="section contact" id="contact">
-    <h2>Bel of mail</h2>
-    <p>Een kop koffie of een belletje is genoeg om te zien of ik iets voor je kan betekenen. Ik reageer binnen één werkdag.</p>
-    <div class="actions">
-      <a class="button" href="tel:+31618654854">Bel 06 18 65 48 54</a>
-      <a class="button secondary" href="mailto:bas@cletos.nl">Mail bas@cletos.nl</a>
+    <div class="news-item">
+      <h3><a href="nieuws/#knab">84% van de zzp'ers gebruikt AI, een kwart zonder afspraken</a></h3>
+      <p>Uit de Zzp AI Monitor 2026 van Knab. Drie huisregels zijn genoeg om het goed te regelen.</p>
     </div>
+    <p class="small"><a href="nieuws/">Alle berichten en bronnen.</a></p>
   </section>
-
 </main>
 
 <footer>
-  <p>Cletos is een handelsnaam van Bas Streefkerk, Apeldoorn. KvK 84578165 · btw-id volgt.</p>
+  <div class="lockup footer-lockup" aria-hidden="true">
+    <svg class="mark" viewBox="0 0 100 100"><path d="M79.3 20.7 A41.4 41.4 0 1 0 79.3 79.3" fill="none" stroke="currentColor" stroke-width="17.2" stroke-linecap="round"/><circle cx="70" cy="50" r="14" fill="#E3A23B"/></svg>
+    <span class="stack"><span class="wordmark">cletos</span><span class="tagline">AI consultancy &amp; automations</span></span>
+  </div>
+  <p>Cletos · Bas Streefkerk · Apeldoorn · KvK 84578165 · btw-id volgt</p>
+  <p>Bedragen op deze site zijn richtprijzen; de definitieve prijs staat in het voorstel dat je na de kennismaking ontvangt.</p>
   <p>Deze website gebruikt geen cookies en verzamelt geen gegevens over bezoekers.</p>
 </footer>
 
