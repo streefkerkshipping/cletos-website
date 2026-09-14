@@ -135,8 +135,11 @@ em { font-style: italic; }
 .steps li { margin: 0 0 0.9rem; padding-left: 0.3rem; }
 .steps li::marker { color: var(--gold-text); font-weight: 600; font-family: var(--display); }
 
-/* Over Bas */
-.about { display: grid; grid-template-columns: 12rem 1fr; gap: 2.25rem; max-width: calc(var(--measure) + 14.25rem); align-items: start; }
+/* Over Bas: foto met één alinea ernaast, de rest eronder */
+.about { display: grid; grid-template-columns: 12rem 1fr; gap: 2.25rem; max-width: calc(var(--measure) + 14.25rem); align-items: center; margin-top: 0.5rem; }
+.about p { margin: 0; }
+.about-rest { padding-top: 1.75rem; }
+.about-rest p:first-child { margin-top: 0; }
 .portrait {
   width: 12rem; height: auto; aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -163,8 +166,8 @@ footer p { margin: 0 0 0.35rem; }
 .footer-lockup .tagline { font-size: 0.8rem; }
 
 @media (max-width: 600px) {
-  .about { grid-template-columns: 1fr; }
-  .portrait { width: 9rem; }
+  .about { grid-template-columns: 1fr; gap: 1.25rem; }
+  .portrait { width: 10rem; }
   .actions .button { width: 100%; text-align: center; }
   .hero { padding-top: 2.5rem; }
 }
